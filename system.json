@@ -583,6 +583,6 @@
   "primaryTokenAttribute": "hp",
   "secondaryTokenAttribute": "effort",
   "url": "https://github.com/sealtrowitz/foundry-godbound",
-  "manifest": "https://github.com/sealtrowitz/foundry-godbound/releases/latest/download/system.json",
-  "download": "https://github.com/sealtrowitz/foundry-godbound/releases/download/v0.92/foundry-godbound-v0.92.zip"
+  "manifest": "https://github.com/Rincelot216/foundry-godbound-fr/releases/latest/download/system.json",
+  "download": "https://github.com/Rincelot216/foundry-godbound-fr/releases/download/v0.92/foundry-godbound-v0.92.zip"
 }
