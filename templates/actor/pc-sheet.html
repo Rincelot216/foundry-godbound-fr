@@ -84,14 +84,14 @@
                                     <td><a class="attr-roll" title="Roll" data-attr="str"><i class="fas fa-dice-d20"></i></a></td>
                                 </tr>
                                 <tr>
-                                    <td>For</td>
+                                    <td>Dex</td>
                                     <td><input type="text" name="data.attributes.dex.score" value="{{data.data.attributes.dex.score}}" data-dtype="Number" /></td>
                                     <td>{{data.data.computed.attributes.dex.mod}}</td>
                                     <td>{{data.data.computed.attributes.dex.check}}</td>
                                     <td><a class="attr-roll" title="Roll" data-attr="dex"><i class="fas fa-dice-d20"></i></a></td>
                                 </tr>
                                 <tr>
-                                    <td>For</td>
+                                    <td>Con</td>
                                     <td><input type="text" name="data.attributes.con.score" value="{{data.data.attributes.con.score}}" data-dtype="Number" /></td>
                                     <td>{{data.data.computed.attributes.con.mod}}</td>
                                     <td>{{data.data.computed.attributes.con.check}}</td>
@@ -582,7 +582,7 @@
                 </select>
                 <div style="display:flex;align-items:center;justify-content: flex-start">
                     <input id="armorShield" type="checkbox" name="data.armor.shield" {{checked data.data.armor.shield}} style="margin-right:4px" />
-                    <label for="armorShield">Shield</label>
+                    <label for="armorShield">Bouclier</label>
 
                     <select name="data.armor.attribute" id="armorAttribute"  style="margin-left:16px" >
                         {{#select data.data.armor.attribute}}
@@ -601,11 +601,11 @@
                     <label  style="margin-left:16px;margin-right:4px;font-weight:bold;" >AC</label> <span style="font-weight:bold">{{data.data.computed.armor.ac}}</span>
 
                     <input id="penalizeHardiness" type="checkbox" name="data.armor.penalizeHardiness" {{checked data.data.armor.penalizeHardiness}} style="margin-left:32px;margin-right:4px" />
-                    <label for="penalizeHardiness">Penalize Hardiness</label>
+                    <label for="penalizeHardiness">Pénaliser Résistance</label>
                     <input id="penalizeEvasion" type="checkbox" name="data.armor.penalizeEvasion" {{checked data.data.armor.penalizeEvasion}} style="margin-left:16px;margin-right:4px" />
-                    <label for="penalizeEvasion">Penalize Evasion</label>
+                    <label for="penalizeEvasion">Pénaliser Évasion</label>
                     <input id="penalizeSpirit" type="checkbox" name="data.armor.penalizeSpirit" {{checked data.data.armor.penalizeSpirit}} style="margin-left:16px;margin-right:4px" />
-                    <label for="penalizeSpirit">Penalize Spirit</label>
+                    <label for="penalizeSpirit">Pénaliser Esprit</label>
 
                 </div>
             </div>
@@ -613,7 +613,7 @@
                 <div class="container col" style="width:50%;">
                     <div class="container col">
                         <h2 style="display:flex;justify-content: space-between;">
-                            <span>Attacks</span>
+                            <span>Attaques</span>
                             <i class="fas fa-plus itemAdder" data-item-type="attack"></i>
                         </h2>
                         <ol class="item-list">
@@ -654,7 +654,7 @@
 
                     <div class="container col" style="margin-top:32px;">
                         <h2 style="display:flex;justify-content: space-between;">
-                            <span>Auto Attacks</span>
+                            <span>Attaque Auto</span>
                             <i class="fas fa-plus itemAdder" data-item-type="autoHitAttack"></i>
                         </h2>
                         <ol class="item-list">
@@ -765,13 +765,13 @@
                 <h2>Richesse</h2>
                 <div class="tabular">
                     <div>
-                        <label for="wealthTotal">Wealth Total:</label>
+                        <label for="wealthTotal">Richesse Totale :</label>
                         <div>
                             <input id="wealthTotal" name="data.wealth.total" value="{{data.data.wealth.total}}" type="text" data-dtype="Number" class="compact" />
                         </div>
                     </div>
                     <div>
-                        <label for="wealthDescription">Description:</label>
+                        <label for="wealthDescription">Description :</label>
                         <textarea id="wealthDescription" name="data.wealth.description">{{data.data.wealth.description}}</textarea>
                     </div>
                 </div>
@@ -872,7 +872,7 @@
         <div class="tab projects" data-group="primary" data-tab="projects">
             <div class="container col">
                 <h2 style="display:flex;justify-content: space-between;">
-                    <span>Projects</span>
+                    <span>Projets</span>
                     <i class="fas fa-plus itemAdder" data-item-type="project"></i>
                 </h2>
                 <ol class="item-list">
@@ -902,11 +902,11 @@
                 </ol>
                 <div style="display:flex;align-items:center;justify-content: space-around">
                     <div>
-                        <label for="influenceContributed">Other Influence Spent:</label>
+                        <label for="influenceContributed">Autre Influence Dépensée :</label>
                         <input id="influenceContributed" name="data.influence.contributed" value="{{data.data.influence.contributed}}" type="text" data-dtype="Number" class="compact" style="margin-left:8px" />
                     </div>
                     <div>
-                        <label for="dominionContributed">Other Dominion Spent:</label>
+                        <label for="dominionContributed">Autre Dominion Dépensée :</label>
                         <input id="dominionContributed" name="data.dominion.contributed" value="{{data.data.dominion.contributed}}" type="text" data-dtype="Number" class="compact" style="margin-left:8px" />
                     </div>
                 </div>
